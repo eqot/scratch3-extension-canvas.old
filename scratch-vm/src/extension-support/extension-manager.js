@@ -8,7 +8,7 @@ const BlockType = require('./block-type');
 // TODO: move these out into a separate repository?
 // TODO: change extension spec so that library info, including extension ID, can be collected through static methods
 
-const builtinExtensions = {
+const builtinExtensions = Object.assign({
     // This is an example that isn't loaded with the other core blocks,
     // but serves as a reference for loading core blocks as extensions.
     coreExample: () => require('../blocks/scratch3_core_example'),
@@ -24,7 +24,7 @@ const builtinExtensions = {
     makeymakey: () => require('../extensions/scratch3_makeymakey'),
     boost: () => require('../extensions/scratch3_boost'),
     gdxfor: () => require('../extensions/scratch3_gdx_for')
-};
+}, require('extension').vm);
 
 /**
  * @typedef {object} ArgumentInfo - Information about an extension block argument

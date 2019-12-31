@@ -37,6 +37,7 @@ const CORE_EXTENSIONS = [
     // 'operators',
     // 'variables',
     // 'myBlocks'
+    Object.keys(require('extension').vm)[0]
 ];
 
 /**

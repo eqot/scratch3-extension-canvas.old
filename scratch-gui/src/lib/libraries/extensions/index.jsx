@@ -47,6 +47,7 @@ import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 export default [
+    require('extension').gui,
     {
         name: (
             <FormattedMessage

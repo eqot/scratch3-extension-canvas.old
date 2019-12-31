@@ -1,0 +1,21 @@
+{
+  "name": "extension",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "scratch-vm": "~0.2.0-prerelease.20191227164934"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.7.7",
+    "@babel/preset-env": "~7.7.7",
+    "babel-loader": "~8.0.6",
+    "url-loader": "~3.0.0",
+    "webpack-cli": "~3.3.10"
+  }
+}

@@ -33,6 +33,7 @@ class DummyBlocks {
     return {
       id: config.id,
       name: config.name,
+      menuIconURI: config.menuIcon,
       blockIconURI: config.blockIcon,
       color1: config.colors && config.colors[0],
       color2: config.colors && config.colors[1],

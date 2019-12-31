@@ -6,7 +6,8 @@ const config = {
   url: 'https://example.org/',
   image: require('../images/dummy.png'),
   imageSmall: require('../images/dummy-small.png'),
-  blockIcon: require('../images/dummy-icon.png'),
+  menuIcon: require('../images/dummy-menuIcon.png'),
+  blockIcon: require('../images/dummy-blockIcon.png'),
   colors: ['#a0a0a0', '#808080', '#606060']
 }
 

@@ -2,7 +2,7 @@
 
 This aims for a comprehensive template to develop a Scratch 3.0 extension easily.
 
-* Integration in scratch-gui and scratch-vm
+* Integration in [scratch-gui](https://github.com/LLK/scratch-gui) and [scratch-vm](https://github.com/LLK/scratch-vm)
 * Live reload
 * Testing (TBD)
 * Deployment to npm registry (TBD)
@@ -10,8 +10,8 @@ This aims for a comprehensive template to develop a Scratch 3.0 extension easily
 
 ## Prerequisites
 
-* [Node.js](https://nodejs.org/)
-* [Rush](https://rushjs.io/)
+* [Node.js](https://nodejs.org/) v10.13+ or v12
+* [Rush](https://rushjs.io/) v5.17+
 
 ## How to use
 

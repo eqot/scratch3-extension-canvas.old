@@ -8,7 +8,7 @@ This aims for a comprehensive template to develop a Scratch 3.0 extension easily
 * Deployment to npm registry (TBD)
 * Publication to GitHub Pages (TBD)
 
-## Prerequisite
+## Prerequisites
 
 * [Node.js](https://nodejs.org/)
 * [Rush](https://rushjs.io/)

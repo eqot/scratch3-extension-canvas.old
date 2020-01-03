@@ -2,19 +2,19 @@
 
 This aims for a comprehensive template to develop a Scratch 3.0 extension easily.
 
-* [scratch-gui](https://github.com/LLK/scratch-gui) and [scratch-vm](https://github.com/LLK/scratch-vm) have been integrated with ```git subtree``` and everything is built with [Rush](https://rushjs.io/)
+* [scratch-gui](https://github.com/LLK/scratch-gui) and [scratch-vm](https://github.com/LLK/scratch-vm) have been integrated with ```git subtree``` and everything is managed with [Rush](https://rushjs.io/)
 * Live reloading is supported
 * Testing (TBD)
 * Built files can be deployed to GitHub Pages
 
 ## Background
 
-Developing your own extension for Scratch 3.0 is a little tricky since your extension requires [scratch-gui](https://github.com/LLK/scratch-gui) and [scratch-vm](https://github.com/LLK/scratch-vm) to be executed and integration with them is not easy.
-You can clone scratch-gui and scratch-vm individually and integrate your extension into them by using ```yarn link```.
-But ```yarn link``` configures linkages between packages globally which means that you can have each package at only a particular directory.
+Developing your own extension for Scratch 3.0 is a little tricky since your extension requires [scratch-gui](https://github.com/LLK/scratch-gui) and [scratch-vm](https://github.com/LLK/scratch-vm) to be executed and integrating with them is not easy.
+You can clone scratch-gui and scratch-vm manually and integrate your extension into them by using ```yarn link```.
+But ```yarn link``` could be a headache sometimes since it configures linkages between packages globally which means that you can have each package at only a particular directory.
 If you would like to move a package to another directory or use a package at different directory, then you need to execute ```yarn unlink``` first to remove a global linkage which could be forgotten and not easy to manage everything.
 
-So, this is developed for a out-of-the-box template which already integrate scratch-gui and scratch-vm with ```git subtree``` and can manage them with [Rush](https://rushjs.io/).
+So, this is developed as a out-of-the-box template which already integrate scratch-gui and scratch-vm with ```git subtree``` and can manage them with [Rush](https://rushjs.io/).
 Rush is a quite useful monorepo manager but can be used for sub trees as packages.
 It manages linkages between packages locally unlike ```yarn link``` and builds all packages in the right order according to dependencies like your extension, scratch-vm and scratch-gui.
 

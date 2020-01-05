@@ -31,6 +31,10 @@ class CanvasBlocks {
 
     if (!this.skin) {
       this.skin = this.runtime.renderer._allSkins[this._penSkinId]
+
+      const skinSize = this.skin.size
+      this._centerX = skinSize[0] / 2
+      this._centerY = skinSize[1] / 2
     }
 
     if (!this.context) {
@@ -103,7 +107,7 @@ class CanvasBlocks {
     const x = Cast.toNumber(args.X)
     const y = Cast.toNumber(args.Y)
 
-    this.context.fillText(message, x + 240, y + 180)
+    this.context.fillText(message, x + this._centerX, y + this._centerY)
 
     this.skin._canvasDirty = true
     this.skin._silhouetteDirty = true

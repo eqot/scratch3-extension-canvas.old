@@ -1,8 +1,8 @@
 const config = {
-  name: 'Dummy',
-  id: 'dummy',
-  description: 'This is a dummy extension',
-  author: 'Someone',
+  name: 'Canvas',
+  id: 'canvas',
+  description: 'Draw text or image to canvas',
+  author: 'Ikuo Terado',
   url: 'https://example.org/',
   image: require('../images/dummy.png'),
   imageSmall: require('../images/dummy-small.png'),
